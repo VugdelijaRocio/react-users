@@ -1,0 +1,50 @@
+.edit-user-container {
+    .container {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        .col {
+            flex: 1 1 auto;
+            .form-field {
+                display: flex;
+                gap: 10px;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                align-items: center;
+                input {
+                    height: 20px;
+                }
+            }
+        }
+    }
+    button {
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: blue;
+        color: white;
+        padding: 4px;
+        min-width: 80px;
+        border: none;
+    }
+    button:disabled, button[disabled]{
+        cursor: unset;
+        background-color: gray;
+    }
+    @media (max-width: 850px) {
+        .container {
+            gap: 0;
+            justify-content: center;
+            margin-left: 24px;
+            margin-right: 24px;
+            flex-wrap: wrap;
+            .col {
+                flex-basis: 100%;
+                .form-field {
+                    justify-content: space-between;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+}

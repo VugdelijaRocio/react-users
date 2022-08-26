@@ -1,10 +1,25 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', 'Oxygen', Arial, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #323233;
+}
+
+input, h2 {
+  font-family: 'Roboto', 'Oxygen', Arial, 'Helvetica Neue', sans-serif;
+  color: #323233;
+  opacity: 1;
+}
+
+button {
+  font-family: 'Roboto', 'Oxygen', Arial, 'Helvetica Neue', sans-serif;
+  cursor: pointer;
+}
+
+button:disabled, button[disabled]{
+  cursor: unset;
+  background-color: gray;
 }
 
 code {
